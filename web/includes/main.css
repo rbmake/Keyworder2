@@ -1,0 +1,516 @@
+body{
+	/* no margin at top since done with logo */
+	/* top right bottom left */
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	border-top: 0px solid white;
+	border-right: 0px solid white;
+	border-bottom: 0px solid white;
+	border-left: 0px solid white;
+	padding: 0px 0px 0px 0px;
+	/*text-align: center;*/
+	/*min-width: 1000px;*/
+	background: #505c69;
+	color: #ffffff;
+	text-align:left;
+
+}
+
+#masterContain
+{
+	/* This must be 0 auto to centre properly */
+	/* margin: 0 auto; */
+	width:1000px;
+	text-align:left;
+	position:relative;
+}
+
+.logo
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	position:absolute;
+	top:0px;
+	left:10px;
+
+}
+
+
+
+
+.loggedIn
+{
+    position:absolute; left:800px; top:10px;
+}
+
+.content
+{
+    position:absolute;
+    left:10px;
+    top:170px;
+}
+
+.bodyWhite {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 12px;
+	font-weight: normal;
+	color: #444248;
+	text-decoration: none;
+	letter-spacing: 0.04em;
+}
+
+.bodyMediumBrown {
+
+        background-color: #4A382C
+}
+
+.bodyDarkBrown {
+
+        background-color: #322319
+}
+
+.bodyDarkGrey {
+
+        background-color: #ADA7A4;
+}
+
+
+
+.bodyLightGrey {
+
+        background-color: #D4CECB;
+}
+
+.bodyVeryLightGrey {
+
+        background-color: #EEEBEA;
+}
+
+.kTable {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	/*color: #322319;*/
+    color:white;
+	text-decoration: none;
+	letter-spacing: 0.01em;
+}
+
+
+/******* FORM ELEMENTS ***************/
+
+.button
+{
+    border: 0.5px solid #006;
+    background: #5970B2;
+    color: white;
+    height:22px;
+    width:80px;
+    font-weight:bold;
+}
+
+.entryboxLarge {
+width: 174px;
+background-color: #FFFFFF;
+}
+
+.entryboxVeryLarge {
+width: 194px;
+background-color: #FFFFFF;
+}
+
+.selectboxLarge {
+width: 179px;
+background-color: #FFFFFF;
+}
+
+.entrybox {
+width: 164px;
+background-color: #FFFFFF;
+}
+
+.textbox {
+width: 166px;
+background-color: #FFFFFF;
+}
+
+.textboxAdmin {
+width: 500px;
+background-color: #FFFFFF;
+}
+
+.textareaAdmin {
+width: 500px;
+height: 200px;
+background-color: #FFFFFF;
+}
+
+.selectbox {
+width: 169px;
+background-color: #FFFFFF;
+}
+
+.entryboxMedium {
+width: 140px;
+background-color: #FFFFFF;
+}
+
+.entryboxSmall {
+width: 100px;
+background-color: #FFFFFF;
+}
+
+
+.selectboxMedium {
+width: 147px;
+background-color: #FFFFFF;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	color: #DDDAD7;
+	text-decoration: none;
+	letter-spacing: 0.04em;
+}
+
+.heading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: bold;
+	color: #322319;
+	text-decoration: none;
+	letter-spacing: 0.01em;
+}
+
+
+
+.titleMediumBrownOld {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: bold;
+	color: #DDDAD7;
+	text-decoration: none;
+	letter-spacing: 0.04em;
+        background-color:  #4A382C;
+}
+
+.titleMediumBrown {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: bold;
+	color: #DDDAD7;
+	text-decoration: none;
+	letter-spacing: 0.04em;
+        background-color:  #4A382C
+}
+
+.titleDarkBrown {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	color: #DDDAD7;
+	text-decoration: none;
+	letter-spacing: 0.04em;
+        background-image:  url(/MG/media/general/pixelDarkBrown.gif)
+}
+
+.statement {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 16px;
+	font-weight: bold;
+	color: #322319;
+	text-decoration: none;
+	letter-spacing: 0.01em;
+}
+
+.info {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	/*color: #322319;*/
+    color:white;
+	text-decoration: none;
+	letter-spacing: 0.01em;
+}
+
+.smallBlack {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 15px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	letter-spacing: 0.01em;
+}
+
+.small {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ADA7A4;
+	text-decoration: none;
+	letter-spacing: 0.01em;
+}
+
+
+.error {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: bold;
+	color: #ED1C1D;
+	text-decoration: none;
+	letter-spacing: 0.01em;
+}
+
+
+
+.downloadLink {
+        font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 12px;
+	font-weight: normal;
+	color: #998E88;
+	text-decoration: underline;
+	letter-spacing: 0.04em;
+}
+
+/**************** TABLE ELEMENTS *******************/
+.spacer
+{
+	height: 3px;
+}
+
+
+/**************** GENERAL **************************/
+th
+{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: bold;
+	color: white;
+	text-decoration: underline;
+	letter-spacing: 0.01em;
+    text-align: left;
+}
+
+a { text-decoration: none;
+    color: white;
+}
+
+img { border-style: none }
+
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: .04em;
+
+}
+
+
+/**************** GENERIC MENU STYLES ******************************/
+
+#menu
+{	margin: 0;
+	padding: 0;
+	z-index: 30}
+
+#menu li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial}
+
+#menu li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 80px;
+	/* This background colour must be the same as the button one for primary and secondary menus to look the same */
+	background: #5970B2;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none}
+
+#menu li a:hover
+{	background: #49A3FF}
+
+#menu div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #EAEBD8;
+	border: 1px solid #5970B2}
+
+#menu div a
+{	position: relative;
+	display: block;
+	margin: 0;
+	padding: 5px 10px;
+	width: auto;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	background: #EAEBD8;
+	color: #2875DE;
+	font: 11px arial}
+
+#menu div a:hover
+{	background: #49A3FF;
+	color: #FFF}
+
+
+/***************** PRIMARY MENU ****************/
+
+.primaryMenu
+{
+    position:absolute; left:10px; top:40px;
+}
+
+/************** SECONDARY MENU ***********/
+.secondaryMenu
+{
+    position:absolute; left:10px; top:140px;
+}
+
+/**************** GENERIC MENU STYLES ******************************/
+
+#secondaryMenu
+{	margin: 0;
+	padding: 0;
+	z-index: 30}
+
+#secondaryMenu li
+{	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+	font: bold 11px arial}
+
+#secondaryMenu li a
+{	display: block;
+	margin: 0 1px 0 0;
+	padding: 4px 10px;
+	width: 80px;
+	/* This background colour must be the same as the button one for primary and secondary menus to look the same */
+	/*background: #4CA26E; - GREEN
+	color: #FFF; - WHITE */
+	background: #ADADAD;
+	color: #333333;
+	text-align: center;
+	text-decoration: none}
+
+#secondaryMenu li a:hover
+{	background: #7CD3FF}
+
+#secondaryMenu div
+{	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background: #EAEBD8;
+	border: 1px solid #5970B2}
+
+#secondaryMenu div a
+{	position: relative;
+	display: block;
+	margin: 0;
+	padding: 5px 10px;
+	width: auto;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+	background: #EAEBD8;
+	color: #2875DE;
+	font: 11px arial}
+
+#secondaryMenu div a:hover
+{	background: #49A3FF;
+	color: #FFF}
+
+/************** PAGE TITLE ***********/
+.pageTitle
+{
+    position:absolute; left:10px; top:80px;
+    color: #FFFFFF;
+    font: 14px arial;
+    width: 1000px;
+    height:20px;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    vertical-align: middle;
+    padding-top:5px;
+}
+
+.pageSubTitle
+{
+	position:absolute; left:10px; top:105px;
+    color: #FFFFFF;
+    font: 14px arial;
+    width: 1000px;
+    height:20px;
+    border-top: 0px white solid;
+    border-bottom: 1px white solid;
+    vertical-align: middle;
+    padding-top:5px;
+
+}
+
+/************ PROGRESS ******************/
+div#progressContainer
+{
+	border:6px double #CCCCCC;
+	margin-top:15px;
+	padding:0;
+	width:200px;
+}
+
+div#progress
+{
+	background-color:#FF8D40;
+	color:#FFFFFF;
+	font-size:12px;
+	height:12px;
+	line-height:1.2em;
+	overflow:hidden;
+	padding-bottom:2px;
+	text-align:center;
+
+}
+
+/*****************************************/
+
+.rounded {
+  -moz-border-radius:3ex;
+  -webkit-border-radius:3ex;
+} 
