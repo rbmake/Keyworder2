@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/Users/robertbrown/Projects/Keyworder2/setup/sun-resources.xml</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/actions/ViewRankingsByMonthAction.java</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/logic/RankingLogic.java</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/objects/Ranking.java</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/objects/MonthYear.java</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/dao/RankingDAO.java</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/objects/Data.java</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/actions/ShowKeywordRankingsByMonthAction.java</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/objects/Request.java</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/objects/Keyphrase.java</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/web/WEB-INF/secure/rankingByRequest.jsp</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/web/WEB-INF/struts-config.xml</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/web/WEB-INF/secure/rankings.jsp</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/web/WEB-INF/secure/rankingsByMonth.jsp</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/web/WEB-INF/secure/rankingsWithList.jsp</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/dao/RefDataDAO.java</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/Props.properties</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/log4j.properties</file>
+        <file>file:/Users/robertbrown/Projects/Keyworder2/src/java/constants/Constants.java</file>
+    </open-files>
+</project-private>

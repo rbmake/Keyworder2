@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+
+<struts-config>
+    <form-beans>
+         <form-bean
+            name="AdminLogin"
+            type="forms.LoginForm"/>
+
+         <form-bean
+            name="Login"
+            type="forms.LoginForm"/>
+
+         <form-bean
+            name="Register"
+            type="forms.RegisterForm"/>
+
+         <form-bean
+            name="Keyphrase"
+            type="forms.KeyphraseForm"/>
+
+         <form-bean
+            name="Domain"
+            type="forms.DomainForm"/>
+
+         <form-bean
+            name="Request"
+            type="forms.RequestForm"/>
+
+         <form-bean
+             name="Mountains"
+             type="forms.MountainsForm"/>
+          <form-bean
+        name="AddKeyphrases"
+        type="forms.AddKeyphrasesForm"/>
+         <form-bean
+        name="DeleteKeyphrase"
+        type="forms.DeleteKeyphraseForm"/>
+    </form-beans>
+    
+    <global-exceptions>
+    
+    </global-exceptions>
+
+    <global-forwards>
+        <forward name="login"  path="/WEB-INF/secure/login.jsp"/>
+    </global-forwards>
+
+    <action-mappings>
+        <action path="/Welcome" forward="/welcomeStruts.jsp"/>
+        <action
+             path="/secure/Login"
+             type="actions.LoginAction"
+             name="Login"
+             scope="request"
+             validate="true"
+             input="/WEB-INF/secure/login.jsp">
+            <forward name="failure" path="/WEB-INF/secure/login.jsp"/>
+            <forward name="success" path="/WEB-INF/secure/domains.jsp"/>
+        </action>
+        <action
+             path="/secure/Logout"
+             type="actions.LogoutAction">
+            <forward name="success" path="/WEB-INF/secure/login.jsp"/>
+        </action>
+        <action
+             path="/secure/LoginRequest"
+             type="actions.LoginRequestAction"
+             name="Login"
+             scope="request"
+             validate="false"
+             input="/WEB-INF/secure/login.jsp">
+            <forward name="success" path="/WEB-INF/secure/login.jsp"/>
+        </action>
+        <action
+            path="/secure/RegisterRequest"
+             type="actions.RegisterRequestAction">
+            <forward name="success" path="/WEB-INF/secure/register.jsp"/>
+        </action>
+        <action
+             path="/secure/Register"
+             type="actions.RegisterAction"
+             name="Register"
+             scope="request"
+             validate="true"
+             input="/WEB-INF/login.jsp">
+            <forward name="failure" path="/WEB-INF/login.jsp"/>
+        </action>
+        <action
+             path="/secure/Keywords"
+             type="actions.ViewKeywordsAction"
+             input="/WEB-INF/secure/keywords.jsp">
+            <forward name="failure" path="/WEB-INF/secure/keyphrases.jsp"/>
+            <forward name="success" path="/WEB-INF/secure/keyphrases.jsp"/>
+        </action>
+        <action
+             path="/secure/Domains"
+             type="actions.ViewDomainsAction">
+            <forward name="success" path="/WEB-INF/secure/domains.jsp"/>
+            <forward name="failure" path="/WEB-INF/secure/domains.jsp"/>
+        </action>
+        <action
+             path="/secure/Rankings"
+             type="actions.ViewRankingsAction">
+            <forward name="success" path="/WEB-INF/secure/rankings.jsp"/>
+            <forward name="failure" path="/WEB-INF/secure/rankings.jsp"/>
+
+        </action>
+        <action
+             path="/secure/ViewRankingsByMonth"
+             type="actions.ViewRankingsByMonthAction">
+            <forward name="success" path="/WEB-INF/secure/rankings.jsp"/>
+            <forward name="failure" path="/WEB-INF/secure/rankings.jsp"/>
+
+        </action>
+         <action
+             path="/secure/SelectRequest"
+             type="actions.SelectRequestAction"
+             name="Request"
+             scope="request">
+            <forward name="success" path="/WEB-INF/secure/requests.jsp"/>
+            <forward name="failure" path="/WEB-INF/secure/requests.jsp"/>
+
+        </action>
+        <action
+             path="/secure/ViewRankingsByRequest"
+             type="actions.ViewRankingsByRequestAction"
+             name="Request"
+             scope="request">
+            <forward name="success" path="/WEB-INF/secure/rankingByRequest.jsp"/>
+            <forward name="failure" path="/WEB-INF/secure/rankingByRequest.jsp"/>
+
+        </action>
+        <action
+             path="/secure/ViewAllRankings"
+             type="actions.ViewAllRankingsAction">
+            <forward name="success" path="/WEB-INF/secure/allRankings.jsp"/>
+            <forward name="failure" path="/WEB-INF/secure/allRankings.jsp"/>
+
+        </action>
+
+        <action
+             path="/secure/ShowKeywordRankings"
+             type="actions.ShowKeywordRankingsAction">
+            <forward name="success" path="/WEB-INF/secure/keywordRankings.jsp"/>
+            <forward name="failure" path="/WEB-INF/secure/keywordRankings.jsp"/>
+
+        </action>
+
+         <action
+             path="/secure/ShowKeywordRankingsByMonth"
+             type="actions.ShowKeywordRankingsByMonthAction">
+            <forward name="success" path="/WEB-INF/secure/keywordRankings.jsp"/>
+            <forward name="failure" path="/WEB-INF/secure/keywordRankings.jsp"/>
+
+        </action>
+
+        <action
+             path="/secure/DoSearch"
+             type="actions.GetSearchResultsAction"
+             name="Keyphrase"
+             scope="request"
+             validate="false">
+             <forward name="failure" path="/WEB-INF/secure/rankings.jsp"/>
+             <forward name="success" path="/secure/ViewRankingsByMonth.do"/>
+        </action>
+
+        <action
+             path="/secure/TestCheckbox"
+             type="actions.TestCheckboxAction"
+             name="Mountains"
+             scope="request"
+             validate="false">
+             <forward name="failure" path="/WEB-INF/secure/rankings.jsp"/>
+             <forward name="success" path="/secure/ViewAllRankings.do"/>
+        </action>
+        <action
+             path="/secure/SeeTest"
+             type="actions.SeeTestAction">
+            <forward name="success" path="/WEB-INF/secure/keyphrases1.jsp"/>
+        </action>
+
+        <action
+             path="/secure/DeleteKeyphrase"
+             type="actions.DeleteKeyphraseAction">
+             <forward name="success" path="/WEB-INF/secure/deleteKeyphraseConfirm.jsp"/>
+             <forward name="failure" path="/WEB-INF/secure/keyphrases.jsp"/>
+        </action>
+
+        <action
+             path="/secure/AddKeyphraseRequest"
+             type="actions.AddKeyphraseRequestAction"
+             name="AddKeyphrases"
+             scope="request"
+             validate="false">
+             <forward name="success" path="/WEB-INF/secure/addKeyphrases.jsp"/>
+             <forward name="failure" path="/WEB-INF/secure/keyphrases.jsp"/>
+        </action>
+
+        <action
+             path="/secure/AddKeyphrase"
+             type="actions.AddKeyphraseAction"
+             name="AddKeyphrases"
+             scope="request"
+             validate="false">
+             <forward name="success" path="/WEB-INF/secure/addKeyphrasesResult.jsp"/>
+             <forward name="failure" path="/WEB-INF/secure/addKeyphrasesResult.jsp"/>
+        </action>
+
+        <action
+             path="/secure/DeleteKeyphraseConfirm"
+             type="actions.DeleteKeyphraseConfirmAction"
+             name="DeleteKeyphrase"
+             scope="request"
+             validate="false">
+             <forward name="success" path="/secure/Keywords.do"/>
+             <forward name="failure" path="/secure/Keywords.do"/>
+        </action>
+
+         <action
+             path="/secure/AddDomainRequest"
+             type="actions.AddDomainRequestAction"
+             name="Domain"
+             scope="request"
+             validate="false">
+             <forward name="success" path="/WEB-INF/secure/addDomain.jsp"/>
+             <forward name="failure" path="/WEB-INF/secure/domains.jsp"/>
+        </action>
+
+        <action
+             path="/secure/AddDomain"
+             type="actions.AddDomainAction"
+             name="Domain"
+             scope="request"
+             validate="false">
+             <forward name="success" path="/WEB-INF/secure/domains.jsp"/>
+             <forward name="failure" path="/WEB-INF/secure/addDomain.jsp"/>
+        </action>
+
+    </action-mappings>
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+    <message-resources parameter="com/myapp/struts/ApplicationResource"/>    
+    
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />      
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
+  
+</struts-config>
